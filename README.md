@@ -2,15 +2,14 @@
 Dojono pluggable form
 
 contains multiple pluggable forms such as : 
--iframe 
 
--file that inserts the form 
+-iframe that contain a form with a progress bar and an iframe that contains no progress bar   
 
--file that inserts the progress bar 
+- Html file that imports the form from a separate html file 
+ 
+- html file that imports both the form and progress bar from a separate file. 
 
--file that inserts both the form and progree bar as a single entity 
 
--file that contains no progress bar
 
 also contains assets files:
 
@@ -25,8 +24,9 @@ a image file that contains the following:
 an logo.svg file
 an manifest.json file
 an norton-ssl.svg file that alerts the user that the form is protected through norton
+
 other files include:
 
 an application-rejected.html and an application-success.html file.
 an decline-flexy.html that alerts the user that there applicaton has been rejected
-an progress-bar.html that stores the progress bar -an form.html that stores the form element
+
