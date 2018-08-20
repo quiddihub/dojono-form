@@ -1,7 +1,7 @@
 # dojono-form
 Dojono pluggable form
 
-contains multiple pluggable forms such as : 
+contains multiple pluggable forms that allows users to such as: 
 
 - An IFrame file that imports a form that contains a progress bar as well as an IFrame that imports a form which does not contain a progress bar    
 
@@ -17,7 +17,7 @@ also contains multiple assets files and folders such as:
 
 - a JavaScript folder that contains multiple javascript files
 
-- a font folder that contains the following file:
+- a font folder that contains the following files:
 
 icons.ttf
 icons.woff
@@ -34,3 +34,4 @@ other files include:
 an application-rejected.html and an application-success.html file.
 an decline-flexy.html that alerts the user that there applicaton has been rejected
 
+There is also an example folder which holds both the iframe files as well as some of the assets files and images files
