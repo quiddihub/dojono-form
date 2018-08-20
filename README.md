@@ -3,7 +3,7 @@ Dojono pluggable form
 
 contains multiple pluggable forms such as : 
 
--iframe that contain a form with a progress bar and an iframe that contains no progress bar   
+ -iframe that contain a form with a progress bar and an iframe that contains no progress bar   
 
 - Html file that imports the form from a separate html file 
  
