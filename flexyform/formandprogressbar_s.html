@@ -1,0 +1,932 @@
+<form id="progressBar" novalidate>
+  <div class="container">
+    <p class="progress-meter-text">Flexy Finance</p>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+      <span class="progress-meter"></span>
+    </div>
+    <div class="progress-meter-info">
+      <div>
+        <p id="progress-percent" class="progress-meter-text"></p>
+      </div>
+      <div>
+        <p id="progress-step" class="progress-meter-text"></p>
+      </div>
+    </div>
+  </div>
+</form>
+
+<form id="flexyForm" novalidate>
+  <div class="validation-container">
+    <input type="hidden" name="_key" value="">
+    <input type="hidden" name="_ga_cookie" value="">
+    <input type="hidden" name="_ga_code" value="UA-103972296-2">
+    <input type="hidden" name="_redirect" value="loan-processing.html">
+    <input type="hidden" name="_decline_path" value="http://qc1.link/decline-flexy">
+    <input type="hidden" name="_failure_redirect" value="http://qc1.link/decline-flexy">
+    <input type="hidden" name="_affiliate_id" value="Quiddi_091">
+    <input type="hidden" name="_affiliate_sub_id" value="">
+    <input type="hidden" name="_site_domain" value="flexyfinance.co.uk">
+    <input type="hidden" name="_accept_location" value="application-success.html">
+    <input type="hidden" name="_reject_location" value="application-rejected.html">
+    <input type="text" name="first_name">
+    <input type="text" name="last_name">
+    <input type="text" name="address_street">
+    <input type="text" name="address_postcode">
+    <input type="email" name="email">
+    <input type="tel" name="phone">
+    <input type="tel" name="mobile">
+    <input type="text" name="validation_01" value="">
+    <input type="text" name="validation_02" value="">
+  </div>
+  <section id="applySection1" class="apply-section" data-step="1" style="display: block;">
+    <div class="apply-section-inner">
+      <div class="container text-center">
+        <div class="apply-section-title">
+          <div class="centred-column">
+            <a href="/" class="form-logo">
+              <img width="" height="" src="/assets/img/logo.svg" alt="Flexy Finance logo">
+            </a>
+          </div>
+          <h2>Start your loan quote</h2>
+          <hr class="title-separator">
+          <!-- <h3>The money could be in your account<br>by <span id="timeToDeposit"></span></h3> -->
+        </div>
+        <div class="row-top-center">
+          <div class="bottom-40 amount-duration-wrap">
+            <div id="loanAmount" class="input-group plus-minus-input">
+              <div class="input-group-button">
+                <button type="button" class="button hollow circle change-value" data-amount="minus" data-field="loan_02">
+                  <i class="fa fa-remove" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="input-wrap currency fa fa-gbp">
+                <input
+                id="loan_02"
+                class="field-required input-group-field min-max"
+                type="number"
+                name="loan_02"
+                data-min="300"
+                data-max="5000"
+                min="300"
+                max="5000"
+                data-msg-min="The minimum loan is Â£300"
+                data-msg-max="The maximum loan is Â£5,000"
+                data-msg-maxlength="The maximum loan is Â£5,000"
+                data-step="100"
+                value="300"
+                >
+              </div>
+              <div class="input-group-button">
+                <button type="button" class="button hollow circle change-value value-plus" data-amount="plus" data-field="loan_02">
+                  <i class="fa fa-add" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <label id="loan_02-error" class="user-invalid" for="loan_02" style="display: none;"><i class="fa fa-exclamation-circle"></i> Enter an amount between Â£300 and Â£5,000</label>
+          </div>
+          <div class="bottom-40 amount-duration-wrap">
+            <div class="input-group plus-minus-input">
+              <select id="loan_03" name="loan_03" class="field-required input-wrap duration-select">
+                <option value="1">1 Month</option>
+                <option value="2">2 Months</option>
+                <option value="3">3 Months</option>
+                <option value="6">6 Months</option>
+                <option value="9">9 Months</option>
+                <option value="12">12 Months</option>
+                <option value="18">18 Months</option>
+                <option value="24">24 Months</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-input-wrap">
+        <button class="button-next button-validation" data-next-step="" type="button">Next</button>
+      </div>
+      <div class="form-row">
+        <div class="form-input-wrap secure-ssl">
+          <svg class="" height="80" width="149">
+              <use xlink:href="/assets/img/norton-ssl.svg#norton-ssl"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="rep-example">
+          <h6>Representative Example - APR 279.1%.</h6>
+          <p><small>Borrow Â£800 Over 12 Months. Monthly Repayment Â£132.16. Total Amount Repayable Of Â£1,585.87. Interest: Â£785.87. Interest Rate: 150% Pa (Fixed). 279.1% APR Representative</small></p>
+          <p><small>We compare the top direct lenders in the UK so you have the best chance of getting the cheapest loan rate through us. We always endeavour to be as flexible as possible, so we offer a loan for everyone - even if you have been declined elsewhere, we can still help. Our small loan form is designed to be as easy as possible to fill out with an average result time of just 39 seconds. Once approved, your cash will be sent within 15 minutes. The time that it takes for the cash to be received in your account will depend on your bankâ€™s policies and procedures.</small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="applySection2" class="apply-section" data-step="2">
+<div class="apply-section-inner">
+  <div class="container text-center">
+    <div class="apply-section-title">
+      <h2>About Your Loan</h2>
+      <hr class="title-separator">
+      <p>What is the main purpose of this loan?</p>
+    </div>
+  </div>
+  <selector role="listbox" class="purpose-selector">
+    <input id="loan_01" type="hidden" name="loan_01">
+    <div class="column column-block">
+      <button data-field="loan_01" data-option="cash" type="button" class="secondary button selector" role="option" aria-selected="false">
+        <i class="fa fa-4x fa-gbp"></i>
+        <br>
+        <h6>Unexpected Expenses</h6>
+      </button>
+    </div>
+    <div class="column column-block">
+      <button data-field="loan_01" data-option="debt" type="button" class="secondary button selector" role="option" aria-selected="false">
+        <i class="fa fa-4x fa-credit-card"></i>
+        <br>
+        <h6>Debt Consolidation</h6>
+      </button>
+    </div>
+    <div class="column column-block">
+      <button data-field="loan_01" data-option="holiday" type="button" class="secondary button selector" role="option" aria-selected="false">
+        <i class="fa fa-4x fa-flight-takeoff"></i>
+        <br>
+        <h6>Holiday</h6>
+      </button>
+    </div>
+    <div class="column column-block">
+      <button data-field="loan_01" data-option="bills" type="button" class="secondary button selector" role="option" aria-selected="false">
+        <i class="fa fa-4x fa-copy"></i>
+        <br>
+        <h6>Pay Bills</h6>
+      </button>
+    </div>
+    <div class="column column-block">
+      <button data-field="loan_01" data-option="other" type="button" class="secondary button selector" role="option" aria-selected="false">
+        <i class="fa fa-4x fa-cake"></i>
+        <br>
+        <h6>Other Purposes</h6>
+      </button>
+    </div>
+  </selector>
+</div>
+</section>
+<section id="applySection3" class="apply-section" data-step="3">
+<div class="apply-section-inner">
+  <div class="container text-center">
+    <div class="apply-section-title">
+      <h2 id="personal-details-title">A Few Details About You</h2>
+      <hr class="title-separator"/>
+      <p>We use these details to confirm that it is you making the application and that we can contact you once your application is submitted.</p>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-input-wrap">
+      <label for="personal_01">Title</label>
+      <select
+      id="personal_01"
+      name="personal_01"
+      class="field-required"
+      data-msg="Please select your title from the list.">
+        <option disabled selected value="">Select</option>
+        <option value="mr">Mr</option>
+        <option value="mrs">Mrs</option>
+        <option value="ms">Ms</option>
+        <option value="miss">Miss</option>
+      </select>
+    </div>
+    <div class="form-input-wrap">
+      <label for="personal_02">First Name</label>
+      <input
+      id="personal_02"
+      type="text"
+      name="personal_02"
+      class="field-required firstname"
+      minlength="2"
+      data-msg="Please enter your first name."
+      data-msg-minlength="Please enter two or more characters">
+    </div>
+    <div class="form-input-wrap">
+      <label for="personal_03">Last Name</label>
+      <input
+      id="personal_03"
+      type="text"
+      name="personal_03"
+      class="field-required lastname"
+      minlength="2"
+      data-msg="Please enter your last name."
+      data-msg-minlength="Please enter two or more characters">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-input-wrap">
+      <label for="dob_day">Date of Birth</label>
+      <input
+      id="personal_04"
+      class="field-required hidden"
+      type="text"
+      name="personal_04"
+      data-msg="Please enter a valid date of birth."
+      data-msg-max="You have to be 18 or over to apply"
+      >
+      <div id="dob_group" class="date-group row">
+        <select
+        id="dob_day"
+        class="date-group-field"
+        name="dob_day"
+        data-date-trigger="day_month"
+        data-date-type="day"
+        data-date-for="#personal_04">
+          <option value="DD" disabled selected>DD</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <select
+        id="dob_month"
+        class="date-group-field"
+        name="dob_month"
+        data-date-trigger="day_month"
+        data-date-type="month"
+        data-date-for="#personal_04">
+          <option value="MM" disabled selected>MM</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select
+        id="dob_year"
+        class="date-group-field"
+        name="dob_year"
+        data-date-type="year"
+        data-date-for="#personal_04">
+          <option value="YYYY" disabled selected>YYYY</option>
+        </select>
+      </div>
+      <label id="personal_04-error" class="user-invalid" for="personal_04" style="display: none;">Please enter a value less than or equal to 1999-12-13.</label>
+    </div>
+    <div class="form-input-wrap input-icon rings">
+      <label for="personal_05">Marital Status</label>
+      <select
+      id="personal_05"
+      name="personal_05"
+      class="field-required"
+      data-msg="Please enter your marital status.">
+        <option disabled selected>Select</option>
+        <option value="single">Single</option>
+        <option value="cohabiting">Cohabiting</option>
+        <option value="married">Married</option>
+        <option value="civil_partnership">Civil Partnership</option>
+        <option value="separated">Separated</option>
+        <option value="divorced">Divorced</option>
+        <option value="widowed">Widowed</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-input-wrap input-icon people">
+      <label for="personal_06">Number of Dependants</label>
+      <select
+      id="personal_06"
+      name="personal_06"
+      class="field-required"
+      data-msg="If you don&#x27;t have any dependants please enter 0. Otherwise enter the number of dependants you have.">
+        <option disabled selected value="">Select</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="5+">5+</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row row-left">
+    <div class="form-input-wrap input-icon email">
+      <label id="contact_01_help" for="contact_01">Your Email</label>
+      <input
+      id="contact_01"
+      name="contact_01"
+      class="field-required"
+      type="email"
+      aria-describedby="contact_01_help"
+      data-msg="Please enter a valid email address."
+      >
+    </div>
+    <div class="form-input-wrap input-icon mobile">
+      <label id="contact_02_help" for="contact_02">Mobile Phone Number</label>
+      <input
+      class="field-required mobile"
+      type="tel"
+      id="contact_02"
+      name="contact_02"
+      aria-describedby="contact_02_help"
+      maxlength="11"
+      minlength="11"
+      data-msg="Please enter a valid UK mobile number.">
+    </div>
+  </div>
+  <div class="form-input-wrap">
+    <button class="button-next button-validation" data-next-step="4" type="button">Next</button>
+  </div>
+  <div class="form-row">
+    <div class="form-input-wrap secure-ssl">
+      <svg class="" height="80" width="149">
+          <use xlink:href="/assets/img/norton-ssl.svg#norton-ssl"></use>
+      </svg>
+    </div>
+  </div>
+  </div>
+</section>
+<section id="applySection4" class="apply-section" data-step="4">
+  <div class="apply-section-inner">
+      <div class="container text-center">
+          <div class="apply-section-title">
+              <h2>Where do you live?</h2>
+              <hr class="title-separator">
+              <p>You need to have a permanent residential address in the UK to be approved for a loan</p>
+          </div>
+      </div>
+      <div class="form-row postcode">
+          <div class="single-input-wrap input-icon location">
+              <label for="postcode_lookup">Postcode</label>
+              <div class="inline-flex">
+                  <input class="field-required postcode" type="text" id="postcode_lookup" name="postcode_lookup" aria-describedby="postcode_lookup" data-msg="Please enter your postcode.">
+                  <button class="postcode-button button secondary">Find Address</button>
+              </div>
+              <label id="postcode_lookup-error" class="user-invalid" style="display: none;" for="postcode_lookup"></label>
+          </div>
+      </div>
+      <div class="form-row">
+          <div id="selectAddressRow" class="single-input-wrap input-icon home" style="display: none;">
+              <label for="selectAddress">Please Select Your Address:</label>
+              <select id="selectAddress" name="selectAddress" class="field-required" data-manual-address-text="Can&#x27;t find your address? Enter your address manually" data-address-select=Select>
+                  <option disabled selected value="">Select</option>
+              </select>
+          </div>
+      </div>
+      <div class="address-wrap">
+          <div class="form-row">
+              <div class="form-input-wrap">
+                  <label for="residence_03">House Name/Number</label>
+                  <input class="field-required" type="text" name="residence_03" id="residence_03" data-msg="Please enter your house name or number.">
+              </div>
+              <div class="form-input-wrap">
+                  <label for="residence_04">Street</label>
+                  <input class="field-required text-only" type="text" name="residence_04" id="residence_04" data-msg="Please enter your street.">
+              </div>
+              <div class="form-input-wrap">
+                  <label for="residence_05">Town/City</label>
+                  <input class="field-required text-only" type="text" name="residence_05" id="residence_05" data-msg="Please enter your town/city.">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-input-wrap">
+                  <label for="residence_06">County</label>
+                  <input class="" type="text" name="residence_06" id="residence_06" data-msg="Please enter your county.">
+              </div>
+              <div class="form-input-wrap">
+                  <label for="residence_07">Postcode</label>
+                  <input class="field-required text-only" type="text" name="residence_07" id="residence_07" data-msg="Please enter your postcode.">
+              </div>
+          </div>
+      </div>
+      <div class="form-row manual-address">
+          <div class="checkbox-row single-input-wrap form-row">
+              <input id="manualAddress" type="checkbox" name="manualAddress" value="manualAddress">
+              <label class="checkbox-label" for="manualAddress">Can&#x27;t find your address? Enter your address manually</label>
+          </div>
+      </div>
+      <div class="form-input-wrap address-next" style="display:none;">
+          <button class="button-next button-validation" data-next-step="5" type="button">Next</button>
+      </div>
+  </div>
+</section>
+<section id="applySection5" class="apply-section" data-step="5">
+<div class="apply-section-inner">
+    <div class="container text-center">
+        <div class="apply-section-title">
+            <h2>About Your Home</h2>
+            <hr class="title-separator">
+            <p>Just two more questions about your home. Do you rent or have a mortgage and how long have you lived there?</p>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-input-wrap input-icon home">
+            <label for="residence_01">Home Status</label>
+            <select id="residence_01" name="residence_01" class="field-required" data-msg="Please select your residential status from the list.">
+                <option disabled selected value="">Select</option>
+                <option value="home_owner">Homeowner</option>
+                <option value="private_tenant">Private Tenant</option>
+                <option value="council_resident">Council Tenant</option>
+                <option value="with_parents">Living with Family</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-input-wrap input-icon time">
+            <label for="residence_02">Time at Address</label>
+            <select id="residence_02" name="residence_02" class="field-required" data-msg="How long have you lived here? Please select from the list.">
+                <option disabled selected value="">Select</option>
+                <option value="12">&lt;  1 Year</option>
+                <option value="24">1 - 2 Years</option>
+                <option value="36">2 - 3 Years</option>
+                <option value="48">3 - 4 Years</option>
+                <option value="60">4 - 5 Years</option>
+                <option value="72">5 - 6 Years</option>
+                <option value="84">6 - 7 Years</option>
+                <option value="96">7 - 8 Years</option>
+                <option value="108">8 - 9 Years</option>
+                <option value="120">9 - 10 Years</option>
+                <option value="132">Over 10 Years</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-input-wrap address-next">
+        <button class="button-next button-validation" data-next-step="6" type="button">Next</button>
+    </div>
+    <div class="form-row">
+        <div class="form-input-wrap secure-ssl">
+            <svg class="" height="80" width="149">
+                <use xlink:href="/assets/img/norton-ssl.svg#norton-ssl"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+</section><section id="applySection6" class="apply-section" data-step="6">
+  <div class="apply-section-inner">
+      <div class="container text-center">
+          <div class="apply-section-title">
+              <h2>About Your Employment</h2>
+              <hr class="title-separator">
+              <p class="subtitle">How do you get your regular income? Salary, pension, benefits or student grant?</p>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-input-wrap input-icon work">
+              <label for="employment_01">Employment Type</label>
+              <select id="employment_01" name="employment_01" class="field-required" data-msg="Please enter your current income status.">
+                  <option disabled selected value="">Select</option>
+                  <option value="full_time">Full Time Employment</option>
+                  <option value="part_time">Part Time Employment</option>
+                  <option value="temporary">Temporary Employment</option>
+                  <option value="self">Self Employed</option>
+                  <option value="student">Student</option>
+                  <option value="pension">Retired</option>
+                  <option value="benefits">Benefits</option>
+                  <option value="unemployed">Unemployed</option>
+              </select>
+          </div>
+          <div class="form-row employed" style="display: none;">
+              <div class="form-input-wrap input-icon industry">
+                  <label for="employment_03">Employers Industry</label>
+                  <select id="employment_03" name="employment_03" class="" data-msg="">
+                      <option disabled selected value="">Select</option>
+                      <option value="health">Health</option>
+                      <option value="education">Education</option>
+                      <option value="civil_service">Civil Service</option>
+                      <option value="construction">Construction</option>
+                      <option value="hotel_restaurant">Hotel Industry</option>
+                      <option value="leisure_industry">Leisure Industry</option>
+                      <option value="manufacturing">Manufacturing</option>
+                      <option value="military">Military</option>
+                      <option value="retail">Retail</option>
+                      <option value="hotel_restaurant">Restaurant Industry</option>
+                      <option value="retail">Supermarket</option>
+                      <option value="telecomms">Telecoms</option>
+                      <option value="utilities">Utilities</option>
+                      <option value="other">Other, office based</option>
+                      <option value="other">Other, non-office based</option>
+                  </select>
+              </div>
+              <div class="form-input-wrap input-icon work">
+                  <label for="employment_02">Employers Name</label>
+                  <input id="employment_02" name="employment_02" type="text" class="two-char" data-msg="Please enter your employers name.">
+              </div>
+          </div>
+          <div class="form-row employed" style="display: none;">
+              <div class="form-input-wrap input-icon person">
+                  <label for="employment_04">Job Title</label>
+                  <input id="employment_04" name="employment_04" type="text" class="text-only" data-msg="Please enter your Job Title">
+              </div>
+              <div class="form-input-wrap input-icon time">
+                  <label for="employment_05">Time in Job</label>
+                  <select id="employment_05" name="employment_05" class="" data-msg="Please enter your time in job">
+                      <option disabled selected value="">Select</option>
+                      <option value="12">&lt; 1 Year</option>
+                      <option value="24">1 - 2 Years</option>
+                      <option value="36">2 - 3 Years</option>
+                      <option value="48">3 - 4 Years</option>
+                      <option value="60">4 - 5 Years</option>
+                      <option value="72">5 - 6 Years</option>
+                      <option value="84">6 - 7 Years</option>
+                      <option value="96">7 - 8 Years</option>
+                      <option value="108">8 - 9 Years</option>
+                      <option value="120">9 - 10 Years</option>
+                      <option value="132">Over 10 Years</option>
+                  </select>
+              </div>
+          </div>
+      </div>
+      <div class="form-input-wrap">
+          <button class="button-next button-validation" data-next-step="7" type="button">Next</button>
+      </div>
+      <div class="form-row">
+          <div class="form-input-wrap secure-ssl">
+              <svg class="" height="80" width="149">
+                  <use xlink:href="/assets/img/norton-ssl.svg#norton-ssl"></use>
+              </svg>
+          </div>
+      </div>
+  </div>
+</section>
+<input id="income_05" type="hidden" name="income_05" value="true">
+<section id="applySection7" class="apply-section" data-step="7">
+<div class="apply-section-inner">
+  <div class="container text-center">
+    <div class="apply-section-title">
+      <h2>About Your Regular Income</h2>
+      <hr class="title-separator">
+      <p class="subtitle">To apply for a loan you need to have a regular income going into a UK bank account. This can be a salary, pension, student loan, benefits payment or any type of regular income.</p>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-input-wrap input-icon calendar">
+      <label for="income_01">When do you get paid?</label>
+      <select id="income_01" name="income_01" class="field-required">
+        <option disabled selected value="">Select</option>
+          <option value="specific_date">Specific Day of the Month</option>
+          <option value="last_working_day">Last Working Day of the Month</option>
+          <option value="last_monday">Last Monday of the Month</option>
+          <option value="last_tuesday">Last Tuesday of the Month</option>
+          <option value="last_wednesday">Last Wednesday of the Month</option>
+          <option value="last_thursday">Last Thursday of the Month</option>
+          <option value="last_friday">Last Friday of the Month</option>
+          <option value="four_weekly">Four Weekly</option>
+          <option value="two_weekly">Twice Monthly</option>
+          <option value="two_weekly">Bi-Weekly</option>
+          <option value="weekly">Weekly</option>
+      </select>
+    </div>
+     <div id="specificDay" class="form-input-wrap" style="display: none;">
+      <label for="income_02">What Day Are You Paid On?</label>
+      <select id="income_02" name="income_02" class="">
+        <option disabled selected value="">Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-input-wrap input-icon currency">
+      <label for="income_06">Monthly Take Home Pay (Â£)</label>
+      <input id="income_06" name="income_06" type="number" class="field-required">
+    </div>
+  </div>
+  <div class="form-row pay-dates" style="display: none;">
+    <div class="form-input-wrap">
+      <label for="npd_day">Next Pay Date</label>
+      <input
+      id="income_03"
+      class="field-required hidden"
+      type="text"
+      name="income_03"
+      data-msg="Please enter the date when you next get paid."
+      data-msg-min="This date should be greater than today's date."
+      >
+      <div id="npd_group" class="date-group row">
+        <select
+        id="npd_day"
+        class="date-group-field"
+        name="npd_day"
+        data-date-trigger="day_month"
+        data-date-type="day"
+        data-date-for="#income_03">
+          <option value="DD" selected="selected">DD</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <select
+        id="npd_month"
+        class="date-group-field"
+        name="npd_month"
+        data-date-trigger="day_month"
+        data-date-type="month"
+        data-date-for="#income_03">
+          <option value="MM" disabled="" selected="">MM</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select
+        id="npd_year"
+        class="date-group-field"
+        name="npd_year"
+        data-date-type="year"
+        data-date-for="#income_03">
+          <option value="YYYY" disabled="" selected="">YYYY</option>
+          <option value="2018">2018</option>
+        </select>
+      </div>
+      <label id="income_03-error" class="user-invalid" for="income_03" style="display: none;">Please enter a value less than or equal to 1999-12-13.</label>
+    </div>
+    <div class="form-input-wrap">
+      <label for="fpd_day">Following Pay Date</label>
+      <input
+      id="income_04"
+      class="field-required hidden"
+      type="text"
+      name="income_04"
+      data-msg="Please enter the date following your next payday."
+      data-msg-greaterThan="The date should follow after the next pay day."
+      >
+      <div id="fpd_group" class="date-group row">
+          <select
+          id="fpd_day"
+          class="date-group-field"
+          name="fpd_day"
+          data-date-trigger="day_month"
+          data-date-type="day"
+          data-date-for="#income_04">
+            <option value="DD" disabled="" selected="">DD</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <select
+          id="fpd_month"
+          class="date-group-field"
+          name="fpd_month"
+          data-date-trigger="day_month"
+          data-date-type="month"
+          data-date-for="#income_04">
+            <option value="MM" disabled="" selected="">MM</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select
+          id="fpd_year"
+          class="date-group-field"
+          name="fpd_year"
+          data-date-type="year"
+          data-date-for="#income_04">
+          <option value="YYYY" disabled="" selected="">YYYY</option>
+          <option value="2018">2018</option>
+        </select>
+      </div>
+      <label id="income_04-error" class="user-invalid" for="income_04" style="display: none;">Please enter a value less than or equal to 1999-12-13.</label>
+    </div>
+  </div>
+  <div class="form-input-wrap">
+    <button class="button-next button-validation" data-next-step="8" type="button">Next</button>
+  </div>
+  <div class="form-row">
+    <div class="form-input-wrap secure-ssl">
+      <svg class="" height="80" width="149">
+          <use xlink:href="/assets/img/norton-ssl.svg#norton-ssl"></use>
+      </svg>
+    </div>
+</div>
+</div>
+</section>
+<section id="applySection8" class="apply-section" data-step="8">
+  <div class="apply-section-inner">
+      <div class="container text-center">
+          <div class="apply-section-title">
+              <h2>How Much Do You Spend Each Month?</h2>
+              <hr class="title-separator">
+              <p class="subtitle">Please complete these to the best of your knowledge - these can be estimates. If you split your bills, include only your share here.</p>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-input-wrap input-icon currency">
+              <label for="expenditure_01">Monthly Rent/Mortgage (Â£)</label>
+              <input id="expenditure_01" name="expenditure_01" type="number" class="field-required">
+          </div>
+          <div class="form-input-wrap input-icon currency">
+              <label for="expenditure_02">Monthly Loan Repayments (Â£)</label>
+              <input id="expenditure_02" name="expenditure_02" type="number" class="field-required">
+          </div>
+          <div class="form-input-wrap input-icon currency">
+              <label for="expenditure_03">Monthly Utility Bills - gas, electric (Â£)</label>
+              <input id="expenditure_03" name="expenditure_03" type="number" class="field-required">
+          </div>
+          <div class="form-input-wrap input-icon currency">
+              <label for="expenditure_04">Monthly Transport Costs (Â£)</label>
+              <input id="expenditure_04" name="expenditure_04" type="number" class="field-required">
+          </div>
+          <div class="form-input-wrap input-icon currency">
+              <label for="expenditure_05">Monthly Food Costs (Â£)</label>
+              <input id="expenditure_05" name="expenditure_05" type="number" class="field-required">
+          </div>
+          <div class="form-input-wrap input-icon currency">
+              <label for="expenditure_06">Other Monthly Expenses (Â£)</label>
+              <input id="expenditure_06" name="expenditure_06" type="number" class="field-required">
+          </div>
+      </div>
+      <div class="form-input-wrap">
+          <button class="button-next button-validation" data-next-step="9" type="button">Next</button>
+      </div>
+      <div class="form-row">
+          <div class="form-input-wrap secure-ssl">
+              <svg class="" height="80" width="149">
+                  <use xlink:href="/assets/img/norton-ssl.svg#norton-ssl"></use>
+              </svg>
+          </div>
+      </div>
+  </div>
+</section><section id="applySection9" class="apply-section" data-step="9">
+<div class="apply-section-inner">
+  <div class="container text-center">
+    <div class="apply-section-title">
+      <h2>Where do you want us to deposit your loan?</h2>
+      <hr class="title-separator">
+      <p class="subtitle">This must be a UK bank which has a debit card attached.</p>
+    </div>
+  </div>
+  <div class="form-row">
+    <input type="hidden" name="banking_01" value="visa_debit">
+    <div class="form-input-wrap input-icon bank">
+      <label for="banking_02">Bank Account Number</label>
+      <input
+      id="banking_02"
+      name="banking_02"
+      type="tel"
+      maxlength="8"
+      minlength="8"
+      placeholder="12345678"
+      class="field-required bankaccount"
+      data-msg="Please enter a valid account number 8 numbers long. If your account number is only 7 digits please add a zero at the beginning.">
+    </div>
+    <div class="form-input-wrap input-icon bank">
+      <label for="banking_03">Bank Sort Code</label>
+      <input
+      id="banking_03"
+      type="tel"
+      name="banking_03"
+      placeholder="123456"
+      maxlength="6"
+      minlength="6"
+      class="field-required sortcode"
+      data-msg="Please enter a valid UK sortcode 6 numbers long e.g.123456.">
+    </div>
+    <div class="form-row checkbox-row">
+      <div class="tandcs-wrap">
+        <input id="terms_accepted" type="checkbox" name="terms_accepted" class="field-required">
+        <label class="checkbox-label" for="terms_accepted">I accept the Privacy Policy and Terms and Conditions, and I confirm that the information I have provided is correct. In addition, I understand that Credit Reference and Fraud Prevention agencies may be used to make lending decisions and for the prevention of fraud and money laundering. Details about this are contained in the Privacy Policy.</label>
+      </div>
+    </div>
+    <div class="form-input-wrap">
+      <label id="terms_accepted-error" class="user-invalid" for="terms_accepted" style="display: none;">This field is required.</label>
+    </div>
+  </div>
+  <div class="form-input-wrap">
+    <button id="submit" class="button-next" data-step="submit" data-next-step="10">Get My Quote!</button>
+  </div>
+  <div class="form-row">
+  <div class="form-input-wrap secure-ssl">
+    <svg class="" height="80" width="149">
+        <use xlink:href="/assets/img/norton-ssl.svg#norton-ssl"></use>
+    </svg>
+  </div>
+</div>
+</div>
+</section>
+</form>
