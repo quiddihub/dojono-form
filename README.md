@@ -3,24 +3,28 @@ Dojono pluggable form
 
 contains multiple pluggable forms such as : 
 
- -iframe that contain a form with a progress bar and an iframe that contains no progress bar   
+- An IFrame file that imports a form that contains a progress bar as well as an IFrame that imports a form which does not contain a progress bar    
 
-- Html file that imports the form from a separate html file 
+- Html file that imports the form from a separate html file whilst having the progress bar contained in the header of the main page. 
  
-- html file that imports both the form and progress bar from a separate file. 
+- html file that imports both the form and progress bar from a separate file.
 
+- html file that imports the form from a separate html file whilst removing the progress bar in the header
 
+- page that alerts the user that their loan is being processed.
 
-also contains assets files:
+also contains multiple assets files and folders such as:
 
-a js file that contains multiple javascript files
+- a JavaScript folder that contains multiple javascript files
 
-a font file that contains the following file:
+- a font folder that contains the following file:
 
 icons.ttf
 icons.woff
 icons.woff2
-a image file that contains the following:
+
+as well as an image folder that contains the following:
+
 an logo.svg file
 an manifest.json file
 an norton-ssl.svg file that alerts the user that the form is protected through norton
