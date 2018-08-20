@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103972296-2"></script>
+
+</head>
+
+<body class="application-success global Sitewide">
+
+  <!--
+    Insert all site specific success tracking here.
+  -->
+  <script src="https://cdn.taboola.com/libtrc/taboolaaccount-davidevansdojonocom/tfa.js"></script>
+  <script type="text/javascript">
+      window._tfa = window._tfa || [];
+      window._dj_cb = function( data ) {
+        console.log( "successful conversion" )
+        _tfa.push( { notify: 'action', currency: 'GBP', quantity: '1', name: 'Flexy_Finance_Lender_Accept', revenue: data.price } ) ;
+      }
+  </script>
+
+
+
+
+
+
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push( arguments ) ; }
+      gtag('js', new Date());
+      gtag('config', 'UA-103972296-2');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="/assets/js/process_application.js"></script>
+
+    <script>
+
+    var ws = new interstitial( {
+      domain: 'api.dojono.co.uk',
+      console_logging: true,
+      on_connected: initiate_request
+    } ) ;
+    var failed_timer = setTimeout( function() { application_request_failed() }, ws.total_wait_time ) ;
+    ws.register( '_application_information', function( data ){ process_application( data ) } ) ;
+    /*
+      Make the first request to kick things off... as soon as the socket is connected.
+    */
+    function initiate_request() {
+      var appid = ws.query_string( 'aid' ) ;
+      ws.send( 'gai', { 'application_id': appid, 'request': ws.request_counter() } ) ;
+    }
+
+    function process_application( data ) {
+      // console.log( 'process_application: ', data ) ;
+      var ga_code = ws.get_ga_code() ;
+      if ( ga_code ) {
+        console.log( "triggering purchase event" ) ;
+        gtag('event', 'purchase', {
+          "transaction_id": data.id,
+          "affiliation": data.affiliate_id,
+          "value": data.price,
+          "currency": "GBP",
+          "tax": 0,
+          "shipping": 0,
+          "items": [
+            {
+              "id": data.affiliate_id,
+              "name": data.affiliate_id +"<->"+ data.purchased_by,
+              "list_name": data.affiliate_sub_id,
+              "brand": "Dojono",
+              "category": "PingTree",
+              "list_position": 1,
+              "quantity": 1,
+              "price": data.price
+            }
+          ]
+        });
+      }
+      /*
+          See if a callback has been defined and call it if so.
+      */
+      if ( typeof window._dj_cb === "function" ) {
+        window._dj_cb( data ) ;
+      }
+      /*
+        Redirect the browser
+      */
+      setTimeout( function() {
+        window.location.href = data.url ;
+      }, 1000 ) ;
+    }
+
+    function application_request_failed() {
+      console.log( "application_request_failed() called" ) ;
+    }
+
+    </script>
+
+<!--
+    <script src="/assets/js/trigger_application.js"></script>
+-->
+
+</body>
+
+</html>
