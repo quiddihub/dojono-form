@@ -3,9 +3,13 @@ Dojono pluggable form
 
 contains multiple pluggable forms such as : 
 -iframe 
+
 -file that inserts the form 
+
 -file that inserts the progress bar 
+
 -file that inserts both the form and progree bar as a single entity 
+
 -file that contains no progress bar
 
 also contains assets files:
