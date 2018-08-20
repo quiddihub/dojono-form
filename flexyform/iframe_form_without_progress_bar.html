@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+  <body>
+    <head>
+      <style>
+      div.invisible1 {
+        float: left;
+        width:50px;
+        height: 100%;
+        }
+        div.invisible2{
+          width:50px;
+          float: right;
+          height: 100%;
+        }
+    body, html
+             {
+                 margin: 0; padding: 0; height: 100%; overflow: hidden; width: 50%;
+             }
+
+             #frame
+             {
+                 position:absolute; left: 0; right: 0; bottom: 0; top: 0px; display:block;
+             }
+
+           iframe{
+             width: 100%;
+             height: 100%;
+             margin-left: auto;   /* Automatic margin from left */
+             margin-right: auto; /* Automatic margin from right */
+           }
+    </style>
+    </head>
+    <script>
+    function Resize(obj) {
+     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+   }
+    </script>
+    <div id="invisible1">
+    </div>
+    <div id="frame">
+      <!--sets up the iframe to have the form to be inserted-->
+  <iframe src="form_without_progress_bar.html" align="center" frameborder="0" scrolling="no" onload="Resize(this)" >
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  </div>
+  <div id="invisible2">
+  </div>
+
+  </body>
+  </html>
