@@ -1,6 +1,12 @@
 # dojono-form
 Dojono pluggable form
 
+
+![An example of one the pluggable forms](http://jack.dojono.co.uk/flexytechimages/embeddedform.jpg)
+
+An example of one the pluggable forms
+
+
 contains multiple pluggable forms that allows users to such as: 
 
 - An IFrame file that imports a form that contains a progress bar as well as an IFrame that imports a form which does not contain a progress bar    
@@ -34,4 +40,4 @@ other files include:
 an application-rejected.html and an application-success.html file.
 an decline-flexy.html that alerts the user that there applicaton has been rejected
 
-There is also an example folder which holds both the iframe files as well as some of the assets files and images files
+There is also an example folder which holds both the iframe files as well as some of the assets files and images files as well a technical implementation guide to show users how to implement the forms correctly 
