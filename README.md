@@ -40,4 +40,5 @@ other files include:
 an application-rejected.html and an application-success.html file.
 an decline-flexy.html that alerts the user that there applicaton has been rejected
 
-There is also an example folder which holds both the iframe files as well as some of the assets files and images files as well a technical implementation guide to show users how to implement the forms correctly 
+There is also an example folder which holds both the iframe files as well as some of the assets files and images files as well a technical implementation guide to show users how to implement the forms correctly which [can be found on the wiki](https://github.com/quiddihub/dojono-form-development/wiki)
+
