@@ -7,7 +7,7 @@ Dojono pluggable form
 An example of one the pluggable forms
 
 
-contains multiple pluggable forms that allows users to such as: 
+contains multiple pluggable forms that allows users to implement them onto web pages such as: 
 
 - An IFrame file that imports a form that contains a progress bar as well as an IFrame that imports a form which does not contain a progress bar    
 
