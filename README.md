@@ -26,13 +26,17 @@ also contains multiple assets files and folders such as:
 - a font folder that contains the following files:
 
 icons.ttf
+
 icons.woff
+
 icons.woff2
 
 as well as an image folder that contains the following:
 
 an logo.svg file
+
 an manifest.json file
+
 an norton-ssl.svg file that alerts the user that the form is protected through norton
 
 other files include:
